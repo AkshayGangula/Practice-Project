@@ -6,6 +6,7 @@ on:
 
 jobs:
   scheduled-task:
+    name: Trigger Code Checkout
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Every minute"
+      - uses: actions/checkout@v4
