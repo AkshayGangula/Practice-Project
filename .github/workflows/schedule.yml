@@ -2,10 +2,10 @@ name: Scheduled Workflow
 
 on:
   schedule:
-    - cron: "20 12 2 12 *"
+    - cron: "25 0 2 12 *"
 
 jobs:
   scheduled-task:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "This workflow runs on DEC 2nd at 12:30 AM"
+      - run: echo "This workflow runs on DEC 2nd at 12:25 AM"
