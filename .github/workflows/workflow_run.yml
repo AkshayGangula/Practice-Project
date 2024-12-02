@@ -1,11 +1,11 @@
 name: Workflow Run Example
 on: 
     workflow_run:
-        workflows: [Deployment Exercise 1]
+        workflows: [Deployment Exercise 2]
         types: [completed]
 jobs:
     echo-string:
         runs-on: ubuntu_latest
         steps:
-            - run: echo "I was trigged because 'Deployment Exercise' 1 was completed"
+            - run: echo "I was trigged because 'Deployment Exercise' 2 was completed"
 
