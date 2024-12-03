@@ -7,5 +7,7 @@ jobs:
         steps:
             - name: Output Github Context
               run: |
+                  echo "${{toJSON(secrets)}}"
+                  echo "${{toJSON(jobs)}}"
                   echo "${{toJSON(github)}}"
                   echo "${{github.event_name}}"
