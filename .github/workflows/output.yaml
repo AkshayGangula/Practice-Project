@@ -8,4 +8,4 @@ jobs:
             - name: Output Github Context
               run: |
                   echo "${{toJSON(github)}}"
-                  echo "${{toJSON(github.event.label.name)}}
+                  echo "${{toJSON(github.event_name)}}
